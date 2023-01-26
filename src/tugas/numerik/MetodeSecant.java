@@ -5,7 +5,7 @@ public class MetodeSecant {
     int i=1;
 
     double fungsi (double x) {
-        return  (x * x * x) - (7 * x) + 1;
+        return  (23 * (x * x * x)) - (12 * x) + 1;
     }
 
     public void hitung (double isiA, double isiB, double totalErr) {

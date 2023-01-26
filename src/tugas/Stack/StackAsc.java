@@ -9,9 +9,7 @@ public class StackAsc {
         StackClass2 toples1 = new StackClass2();
         StackClass2 toples2 = new StackClass2();
         StackClass2 toples3 = new StackClass2();
-        int piring, temp, top2 = 0, top3 = 0, pr2 = 0, pr3 = 0, n2 = 0, n3 = 0;
-        int[] angka = {3, 1, 5, 2, 4};
-        int n = angka.length;
+        int piring, temp, top2 = 0, top3 = 0, pr2, pr3; int[] angka = {3, 1, 5, 2, 4}; int n = angka.length;
 
         // Data awal
         System.out.println("Angka : "+ Arrays.toString(angka));
@@ -28,7 +26,6 @@ public class StackAsc {
             if (i == 0) {
                 toples2.push(piring);
                 top2 = piring;
-                n2++;
             } else {
                 if (piring > top2) {
                     if (piring > top3) {
@@ -41,19 +38,36 @@ public class StackAsc {
                     } else {
                         toples3.push(piring);
                     }
-                    n3++;
                 } else {
                     toples2.push(piring);
                     top2 = piring;
-                    n2++;
                 }
             }
-
         }
+
         System.out.println();
         System.out.print("Toples 2 : "); toples2.tampil();
         System.out.print("\nToples 3 : "); toples3.tampil();
 
-        System.out.println("\n\nTAMPILKAN PENGURUTAN : ? ");
+        for (int i = 0; i < angka.length; i++){
+            if (i == angka.length - 1) {
+                pr3 = toples3.pop();
+                pr2 = 100;
+            } else {
+                pr2 = toples2.pop();
+                pr3 = toples3.pop();
+            }
+
+            if (pr2 < pr3) {
+                toples1.push(pr2);
+                toples3.push(pr3);
+            } else if (pr3 < pr2){
+                toples1.push(pr3);
+                toples2.push(pr2);
+            }
+        }
+
+        System.out.print("\n\nToples : "); toples1.tampil();
+
     }
 }

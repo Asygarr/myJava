@@ -2,7 +2,7 @@ package tugas.Stack;
 
 public class StackClass2 {
 
-    int[] stack = new int[2000];//isi Stack harus dalam bentuk Tipe Array
+    int[] stack = new int[5];//isi Stack harus dalam bentuk Tipe Array
     int top; //deklarasi variabel top
 
     public void push (int angka) {
