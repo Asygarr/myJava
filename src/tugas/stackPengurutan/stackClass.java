@@ -1,8 +1,8 @@
-package tugas.Stack;
+package tugas.stackPengurutan;
 
-public class StackClass2 {
+public class stackClass {
 
-    int[] stack = new int[5];//isi Stack harus dalam bentuk Tipe Array
+    int[] stack = new int[2000];//isi Stack harus dalam bentuk Tipe Array
     int top; //deklarasi variabel top
 
     public void push (int angka) {
@@ -20,6 +20,10 @@ public class StackClass2 {
         for(int i = top-1;i>=0;i--) { //input menggunakan looping
             System.out.print(stack[i]+" ");
         }
+    }
+
+    public int top() {
+        return stack[top-1];
     }
 
 }
