@@ -11,7 +11,7 @@ public class stack {
         stackClass toples2 = new stackClass();
         stackClass toples3 = new stackClass();
         int piring, temp, top2 = 0, top3 = 0;
-       /*int[] angka = new int[6];
+        /*int[] angka = new int[6];
         for (int i = 0; i < 6; i++){
             angka[i] = rand.nextInt(1, 10);
         }*/
