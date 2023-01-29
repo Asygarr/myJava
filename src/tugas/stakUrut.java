@@ -60,7 +60,11 @@ public class stakUrut {
                     toples1.push(toples3.pop());
                 }
             } catch (Exception e) {
-                toples1.push(toples3.pop());
+                try {
+                    toples1.push(toples3.pop());
+                } catch (Exception a) {
+                    toples1.push(toples2.pop());
+                }
             }
         }
 

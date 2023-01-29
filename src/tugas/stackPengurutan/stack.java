@@ -16,7 +16,7 @@ public class stack {
             angka[i] = rand.nextInt(1, 10);
         }*/
 
-        int[] angka = {6, 5, 2, 4, 1, 3};
+        int[] angka = {6, 5, 5, 8, 6, 1};
         int n = angka.length;
 
         // Data awal
@@ -67,7 +67,11 @@ public class stack {
                     toples1.push(toples3.pop());
                 }
             } catch (Exception e) {
+                try {
                 toples1.push(toples3.pop());
+                } catch (Exception a) {
+                    toples1.push(toples2.pop());
+                }
             }
         }
 
