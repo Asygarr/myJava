@@ -11,12 +11,12 @@ public class stack {
         stackClass toples2 = new stackClass();
         stackClass toples3 = new stackClass();
         int piring, temp, top2 = 0, top3 = 0;
-        /*int[] angka = new int[6];
+        int[] angka = new int[6];
         for (int i = 0; i < 6; i++){
             angka[i] = rand.nextInt(1, 10);
-        }*/
+        }
 
-        int[] angka = {6, 5, 5, 8, 6, 1};
+//        int[] angka = {6, 5, 5, 8, 6, 1};
         int n = angka.length;
 
         // Data awal
@@ -68,7 +68,7 @@ public class stack {
                 }
             } catch (Exception e) {
                 try {
-                toples1.push(toples3.pop());
+                    toples1.push(toples3.pop());
                 } catch (Exception a) {
                     toples1.push(toples2.pop());
                 }
