@@ -86,6 +86,7 @@ public class HitungLuas {
             }
 
 
+            System.out.println();
             System.out.print("ulang? (y/n)");
             ulang = scanner.next();
         } while (ulang.equalsIgnoreCase("y"));
