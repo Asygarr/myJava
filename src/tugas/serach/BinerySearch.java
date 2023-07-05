@@ -12,12 +12,9 @@ public class BinerySearch {
         for (int i = 0; i < data; i++){
             huruf[i] = ascii++;
         }
-
         seleksiTampilan(pilihan, huruf, mid, data);
-
     }
 
-    // Jika indeks lebih tinggi
     private static void kurang (int mid, char[] huruf, char pilihan){
         for (int i = 0; i < mid; i++){
             if (huruf[i] == pilihan){
@@ -27,7 +24,6 @@ public class BinerySearch {
         }
     }
 
-    // Jika indeks lebih rendah
     private static void lebih (int mid, char[] huruf, char pilihan, int data){
         for (int i = mid; i < data; i++){
             if (huruf[i] == pilihan){
@@ -37,7 +33,6 @@ public class BinerySearch {
         }
     }
 
-    // Seleksi Indeks Tengah
     private static void seleksiTampilan (char pilihan, char[] huruf, int mid, int data){
         if (pilihan < huruf[mid]){
             kurang(mid, huruf, pilihan);
