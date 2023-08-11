@@ -1,7 +1,7 @@
 package tugas.Stack;
 
 
-public class Stack {
+public class   Stack {
 
     public static void main(String[] args) {
         StackClass toples1 = new StackClass();
